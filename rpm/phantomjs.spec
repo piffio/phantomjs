@@ -1,5 +1,5 @@
 %define name	phantomjs
-%define version	1.9.2
+%define version	%{_pversion}
 %define release 1
 %define prefix	/usr
 
@@ -142,6 +142,9 @@ cp README.md %{mybuilddir}%{prefix}/share/%{name}/
 %{prefix}/share/%{name}/examples/weather.js
 
 %changelog
+* Tue Feb 25 2014 Sergio Visinoni <piffio@piffio.org>
+- Fetch the version from the generated binary
+
 * Tue Apr 30 2013 Eric Heydenberk <heydenberk@gmail.com>
 - add missing filenames for examples to files section
 
